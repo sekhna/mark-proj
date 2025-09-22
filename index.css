@@ -1,0 +1,81 @@
+.hero-section {
+    height: 100vh;
+    background-image: url('assets/images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.star-min {
+    margin-top: 431px;
+    margin-left: 50%;
+    position: absolute;
+
+}
+
+.star-max {
+    margin-top: 150px;
+    margin-left: 90%;
+    position: absolute;
+}
+
+.hero {
+    padding-top: 120px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-header {
+    font-family: 'Integral CF P', sans-serif;
+    font-size: 64px;
+}
+
+.hero-text {
+    padding: 25px 0;
+    font-size: 16px;
+    font-family: 'Satoshi Regular', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    ;
+}
+
+.hero-shop-button {
+    height: 52px;
+    width: 210px;
+    background-color: black;
+    color: white;
+    border-radius: 62px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+}
+
+.hero-statistics {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.hero-statistics h2 {
+    font-size: 40px;
+    font-family: 'Satoshi Bold', sans-serif;
+    color: rgba(0, 0, 0, 1);
+}
+
+.hero-statistics p {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-statistic-cell {
+    border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    padding-right: 30px;
+}
+
+.brands {
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
