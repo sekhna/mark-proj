@@ -19,6 +19,14 @@
         url(assets/Satoshi-Regular.woff2)
 }
 
+@font-face {
+    font-family: Satoshi Medium;
+    src: url(assets/Satoshi-Medium.eot),
+        url(assets/Satoshi-Medium.ttf),
+        url(assets/Satoshi-Medium.woff),
+        url(assets/Satoshi-Medium.woff2)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -139,6 +147,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.function-button{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 390px) {
