@@ -192,33 +192,31 @@
     gap: 20px;
 }
 
-.row1 {
+.category-row1 {
+    height: 289px;
+    width: 407px;
     grid-area: row1;
 }
 
-.row1-2 {
+.category-row1-2 {
+    height: 289px;
+    width: 684px;
     grid-area: row1-2;
 }
 
-.row2 {
+.category-row2 {
+    height: 289px;
+    width: 684px;
     grid-area: row2;
 }
 
-.row2-2 {
+.category-row2-2 {
+    height: 289px;
+    width: 407px;
     grid-area: row2-2;
 }
 
-.clothes-categories-container{
-    background-color: rgba(240, 240, 240, 1);
-    border-radius: 40px;
-    margin: auto 100px;
-}
-
-.clothes-category-image{
-    border-radius: 20px;
-}
-
-.clothes-category-name{
+.clothes-category-name {
     font-family: 'Satoshi Bold', sans-serif;
     font-size: 36px;
     padding-top: 25px;
@@ -227,10 +225,47 @@
     position: absolute;
 }
 
+.clothes-category-card {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.clothes-category-image {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.casual-style {
+    transform: translateX(-12%) translateY(20%) scaleX(-1) scale(2.5);
+}
+
+.formal-style {
+    transform: translateX(100%) translateY(50%) scale(3);
+}
+
+.party-style {
+    transform: translateX(69%) translateY(1%) scale(2.1);
+}
+
+.gym-style {
+    transform: translateX(95%) translateY(15%) scale(2.3);
+}
+
+.clothes-categories-container {
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 40px;
+    margin: auto 100px;
+    padding-bottom:70px;
+}
+
 @media screen and (max-width: 390px) {
     body {
         width: 390px;
-        ;
     }
 
     .hero-header {
@@ -300,7 +335,6 @@
 
     .hero-section-image {
         display: block;
-        /* padding: 10px; */
     }
 
     .star-min {
@@ -361,7 +395,7 @@
 
     .view-all-button {
         width: 100%;
-        margin: 0px;
+        margin: 0 12px;
     }
 
     .view-all-button-container {
@@ -377,5 +411,49 @@
         font-size: 32px;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .clothes-categories-container{
+        margin: 0;
+        border-radius: 20px;
+        padding-bottom: 30px;
+        margin: 0 12px;
+    }
+
+    .clothes-categories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clothes-category-card{
+        width: 310px;
+        height: 190px;
+    }
+
+    .formal-style{
+        transform: translateX(70%) translateY(44%) scale(3);
+    }
+
+    .party-style{
+        transform: translateX(35%) translateY(-13%) scale(1.5);
+    }
+
+    .gym-style{
+        transform: translateX(116%) translateY(15%) scale(2.3)
+    }
+
+    .clothes-category-name{
+        font-size: 24px;
+        padding: 16px 24px;
+    }
+
+    .clothes-categories-header-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .clothes-categories-header{
+        width: 90%;
     }
 }
