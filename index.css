@@ -260,7 +260,65 @@
     background-color: rgba(240, 240, 240, 1);
     border-radius: 40px;
     margin: auto 100px;
-    padding-bottom:70px;
+    padding-bottom: 70px;
+}
+
+.review-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.review-header {
+    text-align: left !important;
+    padding-left: 100px;
+    display: inline;
+    padding-bottom: 35px !important;
+}
+
+.review-navigation {
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+    justify-content: flex-end;
+
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 240px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.customer-name {
+    font-family: 'Satoshi Bold', sans-serif;
+    font-size: 20px;
+    display: inline;
+}
+
+.review-text {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 390px) {
@@ -413,47 +471,85 @@
         padding-bottom: 40px;
     }
 
-    .clothes-categories-container{
+    .clothes-categories-container {
         margin: 0;
         border-radius: 20px;
         padding-bottom: 30px;
         margin: 0 12px;
     }
 
-    .clothes-categories{
+    .clothes-categories {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .clothes-category-card{
+    .clothes-category-card {
         width: 310px;
         height: 190px;
     }
 
-    .formal-style{
+    .formal-style {
         transform: translateX(70%) translateY(44%) scale(3);
     }
 
-    .party-style{
+    .party-style {
         transform: translateX(35%) translateY(-13%) scale(1.5);
     }
 
-    .gym-style{
+    .gym-style {
         transform: translateX(116%) translateY(15%) scale(2.3)
     }
 
-    .clothes-category-name{
+    .clothes-category-name {
         font-size: 24px;
         padding: 16px 24px;
     }
 
-    .clothes-categories-header-container{
+    .clothes-categories-header-container {
         display: flex;
         justify-content: center;
     }
 
-    .clothes-categories-header{
+    .clothes-categories-header {
         width: 90%;
     }
+
+    .review-header {
+        padding-left: 12px;
+        font-size: 32px;
+        padding-bottom: 20px !important;
+    }
+
+    .review-navigation {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .review-header-container {
+        align-items: end;
+    }
+
+    .review-card {
+        width: 358px;
+        height: 185px;
+    }
+
+    .customer-name {
+        font-size: 16px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .review-card:nth-child(2),
+    .review-card:nth-child(3) {
+        display: none;
+    }
+
+    .customer-verified-icon {
+        max-width: 15px;
+    }
+    
 }
