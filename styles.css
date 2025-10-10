@@ -149,8 +149,78 @@
     gap: 8px;
 }
 
-.function-button{
+.function-button {
     cursor: pointer;
+}
+
+
+.subscribe-newsletter {
+    margin: -90px 100px 0 100px;
+    background-color: black;
+    height: 180px;
+    position: absolute;
+    width: calc(100% - 200px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-newsletter-header {
+    font-family: 'Integral CF P', sans-serif;
+    font-size: 40px;
+    color: white;
+    width: 50%;
+    padding-left: 55px;
+}
+
+.email-container {
+    position: relative;
+}
+
+.subscribe-field {
+    width: 349px;
+    border-radius: 62px;
+}
+
+.subscribe-input {
+    border: none;
+    outline: none;
+    font-family: 'Satoshi Regular', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    padding: 12px 15px 12px 50px;
+}
+
+.subscribe-button {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Satoshi Medium', sans-serif;
+    font-size: 16px;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.subscribe-newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.email-icon {
+    position: absolute;
+    top: 15px;
+    padding-left: 15px;
+}
+
+.main-footer {
+    min-height: 500px;
+    background-color: rgba(240, 240, 240, 1);
+    margin-top: 110px;
 }
 
 @media screen and (max-width: 390px) {
@@ -188,5 +258,39 @@
 
     .main-header span {
         font-size: 25.2px;
+    }
+
+    .subscribe-newsletter{
+        flex-direction: column;
+        margin: -155px 12px 0 12px;
+        width: calc(100% - 24px);
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .subscribe-newsletter-header{
+        font-size: 32px;
+        width: auto;
+        padding: 30px;
+    }
+
+    .subscribe-field{
+        width: 311px;
+    }
+
+    .subscribe-input{
+        font-size: 14px;
+        padding: 12px 15px 12px 45px;
+    }
+
+    .email-icon{
+        width: 17px;
+        height: 13px;
+        padding-left: 0;
+        transform: translateX(15px);
+    }
+
+    .subscribe-button {
+        font-size: 14px;
     }
 }
