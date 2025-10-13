@@ -178,11 +178,6 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.separator-line {
-    border-top: 1px rgba(0, 0, 0, 0.1) solid;
-    margin: 0 100px;
-}
-
 .clothes-categories {
     display: grid;
     grid-template-areas:
