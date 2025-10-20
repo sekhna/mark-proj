@@ -231,7 +231,14 @@
     padding: 150px 100px 50px 100px;
     display: flex;
     gap: 50px;
+    /* justify-content: space-between; */
+}
+
+.site-map {
+    display: flex;
+    gap: 50px;
     justify-content: space-between;
+    width: 80%;
 }
 
 .footer-section {
@@ -242,6 +249,11 @@
 
 .brand-info {
     width: 20%;
+
+    /*display: flex;
+    justify-content: left;
+    align-items: center;
+     height: 100vh; */
 }
 
 .footer-section p {
@@ -271,7 +283,7 @@
 
 .footer-section a {
     font-family: 'Satoshi Regular', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
     font-weight: 400;
@@ -386,5 +398,68 @@
 
     .main-footer {
         margin-top: 140px;
+    }
+
+    .footer-site-map {
+        flex-direction: column;
+        padding: 170px 12px 40px 12px;
+    }
+
+    .brand-info {
+        width: 100% !important;
+    }
+
+    .brand-name {
+        font-size: 28.85px;
+    }
+
+    .site-map {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-section p {
+        line-height: 20px;
+        gap: 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .footer-section a {
+        font-size: 14px;
+    }
+
+    .footer-section {
+        gap: 15px;
+        width: 45%;
+    }
+
+    .footer-site-map {
+        gap: 25px;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        padding: 15px 12px 60px 12px;
+        ;
+    }
+
+    .bottom-footer span {
+        text-align: center;
+    }
+
+    .bottom-footer-payment-sources {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .pay-source-icon {
+        width: 38px;
+        height: 28px;
+        padding: 8px 3px;
     }
 }
