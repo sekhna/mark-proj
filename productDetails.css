@@ -1,0 +1,212 @@
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 20px 100px;
+}
+
+.breadcrumb li a {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.breadcrumb li:last-child a {
+    color: rgba(0, 0, 0, 1)
+}
+
+.breadcrumb li:not(:first-child) {
+    padding: 0px 0px 10px 10px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    right: 0;
+    margin: 0 0 0 10px;
+}
+
+.product-info {
+    display: flex;
+    gap: 40px;
+    padding: 0 100px;
+}
+
+.thumbnails-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-thumbnail {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 152px;
+    height: 167px;
+}
+
+.product-thumbnail.active {
+    border: 2px solid #000;
+}
+
+.product-images-section {
+    display: flex;
+    gap: 10px;
+}
+
+.main-product-image {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 444px;
+    height: 530px;
+}
+
+.product-info-section h1 {
+    font-family: 'Integral CF P', sans-serif;
+    font-size: 40px;
+}
+
+.product-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-star-icon {
+    height: 24.71px;
+}
+
+.product-rating-count {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.product-details-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.product-details-price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.product-details-price span {
+    font-family: 'Satoshi Bold', sans-serif;
+    font-size: 32px;
+}
+
+.product-details-discount-percent {
+    background-color: rgba(255, 51, 51, 0.1);
+    color: rgba(255, 51, 51, 1);
+    font-size: 16px !important;
+    font-family: 'Satoshi Medium', sans-serif;
+    border-radius: 62px;
+    padding: 6px 14px;
+}
+
+.product-details-discounted-price {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+
+.product-details-description p {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.product-details-separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.choosable-option-header {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.color-options {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.color-option {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+}
+
+.color-option.selected {
+    background-image: url(assets/images/selected-color-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.size-options {
+    display: flex;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.size-option {
+    padding: 12px 24px;
+    border-radius: 64px;
+    background-color: rgba(240, 240, 240, 1);
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.size-option.selected {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Satoshi Medium', sans-serif;
+    font-weight: 500;
+}
+
+.add-product-to-cart-container {
+    display: flex;
+    gap: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(240, 240, 240, 1);
+    font-family: 'Satoshi Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    padding: 16px 20px;
+    border-radius: 62px;
+}
+
+.quantity-button {
+    cursor: pointer;
+    border: none;
+}
+
+.add-to-cart-button{
+    padding: 16px 54px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 62px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Satoshi Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}

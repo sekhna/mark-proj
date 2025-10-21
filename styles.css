@@ -86,10 +86,11 @@
 }
 
 .main-header nav a {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Satoshi Regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+;
     text-decoration: none;
     display: flex;
     align-items: center;
